@@ -16,7 +16,7 @@ public class PlayPowerUp : MonoBehaviour
 
     public void playSound(){
 
-        audioSrc.playOneShot(audioClip);
+        // audioSrc.playOneShot(audioClip);
 
 
     }
