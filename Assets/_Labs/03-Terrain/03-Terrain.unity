@@ -19099,6 +19099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   countText: {fileID: 1919512373}
+  winTextObject: {fileID: 1868527053}
 --- !u!65 &995073645
 BoxCollider:
   m_ObjectHideFlags: 0
