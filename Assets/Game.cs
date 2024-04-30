@@ -1,13 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+
 
 public class Game : MonoBehaviour
 {
 
 	private int count;
     private Rigidbody rb; 
-	public txt countText;
+	public TextMeshProUGUI countText;
 
 
     // Start is called before the first frame update
@@ -20,12 +22,12 @@ public class Game : MonoBehaviour
 
     void SetCountText() 
 	{
-	countText =  "Count: " + count.ToString();
+	countText.text =  "Count: " + count.ToString() + "/5";
 	if (count == 20)
 		{
 			// winTextObject.SetActive(true);
 		}
-	
+    
 	}
 
     // // Update is called once per frame
