@@ -10,6 +10,8 @@ public class Game : MonoBehaviour
 	private int count;
     private Rigidbody rb; 
 	public TextMeshProUGUI countText;
+    public GameObject winTextObject;
+
 
 
     // Start is called before the first frame update
@@ -18,14 +20,17 @@ public class Game : MonoBehaviour
     rb = GetComponent <Rigidbody>(); 
 	count = 0; 
 	SetCountText();
+    winTextObject.SetActive(false);
+
     }
 
     void SetCountText() 
 	{
 	countText.text =  "Count: " + count.ToString() + "/5";
-	if (count == 20)
+	if (count == 5)
 		{
-			// winTextObject.SetActive(true);
+            
+			winTextObject.SetActive(true);
 		}
     
 	}
